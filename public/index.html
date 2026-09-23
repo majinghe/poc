@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RustFS 对象存储 PoC 调研表</title>
+  <link rel="stylesheet" href="css/app.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="logo">RustFS</span>
+      <span class="brand-title">对象存储 PoC 调研表</span>
+      <span class="brand-sub">客户环境与需求收集（售前 / PoC）</span>
+    </div>
+    <div class="actions">
+      <span id="save-hint" class="save-hint"></span>
+      <button id="btn-restore" class="btn btn-ghost" type="button">恢复草稿</button>
+      <button id="btn-clear" class="btn btn-ghost" type="button">清空</button>
+      <button id="btn-submit" class="btn btn-primary" type="button">提交并生成 PDF</button>
+    </div>
+  </header>
+
+  <div class="layout">
+    <nav class="sidebar">
+      <div class="sidebar-title">目录</div>
+      <ol id="toc" class="toc"></ol>
+      <div class="sidebar-foot">
+        <div id="progress" class="progress">必填完成 0 / 9</div>
+      </div>
+    </nav>
+
+    <main class="content">
+      <div id="result" class="result hidden">
+        <div class="result-head">
+          <h2>PDF 已生成</h2>
+          <div class="result-actions">
+            <a id="btn-download" class="btn btn-primary" download href="#">下载 PDF</a>
+            <button id="btn-back" class="btn btn-ghost" type="button">返回修改</button>
+          </div>
+        </div>
+        <iframe id="pdf-frame" title="PDF 预览"></iframe>
+      </div>
+
+      <form id="survey" class="survey" autocomplete="off"></form>
+
+      <footer class="foot">
+        *文档结束 —— 《RustFS 对象存储 PoC 调研表》｜客户环境与需求收集（售前 / PoC）*
+      </footer>
+    </main>
+  </div>
+
+  <script src="js/schema.js"></script>
+  <script src="js/form-render.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+{
+  "name": "rustfs-poc-survey",
+  "version": "1.0.0",
+  "description": "RustFS 对象存储 PoC 调研表 — Web 填写与 PDF 生成",
+  "main": "server.js",
+  "private": true,
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "sample": "node scripts/generate-sample.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "puppeteer-core": "^24.10.0"
+  }
+}
