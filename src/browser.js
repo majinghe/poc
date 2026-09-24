@@ -63,7 +63,7 @@ async function renderPdf(html) {
       displayHeaderFooter: true,
       headerTemplate: '<div style="width:100%;font-size:8px;color:#8a93a5;text-align:center;"></div>',
       footerTemplate: '<div style="width:100%;font-size:8px;color:#8a93a5;display:flex;justify-content:center;gap:8px;">' +
-        '<span>RustFS 对象存储 PoC 调研表</span><span>第 <span class="pageNumber"></span> / <span class="totalPages"></span> 页</span></div>',
+        '<span>客户 PoC 调研表</span><span>第 <span class="pageNumber"></span> / <span class="totalPages"></span> 页</span></div>',
     });
   } finally {
     await page.close().catch(() => {});

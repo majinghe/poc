@@ -1,7 +1,7 @@
 {
-  "name": "rustfs-poc-survey",
-  "version": "1.0.0",
-  "description": "RustFS 对象存储 PoC 调研表 — Web 填写与 PDF 生成",
+  "name": "customer-poc-survey",
+  "version": "1.1.0",
+  "description": "客户 PoC 调研表 — Web 填写与 PDF 生成（RustFS 售前 / PoC）",
   "main": "server.js",
   "private": true,
   "scripts": {

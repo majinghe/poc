@@ -34,9 +34,9 @@
   const it = (label, key, fields) => ({ label, key, fields: fields || [] });
 
   const SCHEMA = {
-    docTitle: 'RustFS 对象存储 PoC 调研表',
+    docTitle: '客户 PoC 调研表',
     docSubtitle: '客户环境与需求收集（售前 / PoC）',
-    docEnd: '文档结束 —— 《RustFS 对象存储 PoC 调研表》｜客户环境与需求收集（售前 / PoC）',
+    docEnd: '文档结束 —— 《客户 PoC 调研表》｜客户环境与需求收集（售前 / PoC）',
 
     toc: [
       '文档属性', '填写说明', '1. 文档信息与联系人', '2. 客户与业务背景', '3. PoC 目标与成功标准',

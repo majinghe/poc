@@ -31,7 +31,7 @@ app.post('/api/generate', async (req, res) => {
     const date = (meta.date && meta.date.v) || new Date().toISOString().slice(0, 10);
     const html = buildHtml(data);
     const pdf = await renderPdf(html);
-    const filename = `RustFS-PoC调研表-${safeName(customer)}-${safeName(date)}-${Date.now()}.pdf`;
+    const filename = `客户PoC调研表-${safeName(customer)}-${safeName(date)}-${Date.now()}.pdf`;
     fs.writeFileSync(path.join(OUT_DIR, filename), pdf);
     res.json({ ok: true, url: '/pdf/' + encodeURIComponent(filename), filename });
   } catch (e) {
@@ -54,7 +54,7 @@ app.get('/pdf/:file', (req, res) => {
 app.get('/health', (req, res) => res.json({ ok: true }));
 
 const server = app.listen(PORT, () => {
-  console.log(`RustFS PoC 调研表已启动: http://127.0.0.1:${PORT}`);
+  console.log(`客户 PoC 调研表已启动: http://127.0.0.1:${PORT}`);
 });
 
 function shutdown() {
